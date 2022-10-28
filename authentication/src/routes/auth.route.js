@@ -8,7 +8,7 @@ router.post('/register', userController.register);
 //LOGIN
 router.post('/login', userController.login);
 
-//GET PROFILE
+//GET PROFILE3
 router.get('/get-profile', auth,  userController.getProfile);
 
 module.exports = router;

@@ -14,6 +14,7 @@ const authRoute = require('./src/routes/auth.route');
 
 app.use('/auth', authRoute);
 
+
 app.listen(8001, () => {
     console.log('Customer is Listening to Port 8001')
 })
