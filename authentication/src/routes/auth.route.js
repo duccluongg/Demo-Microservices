@@ -11,4 +11,6 @@ router.post('/login', userController.login);
 //GET PROFILE3
 router.get('/get-profile', auth,  userController.getProfile);
 
+router.get('/check-auth', auth, (req, res) => res.status(200).json("Authenticated"));
+
 module.exports = router;

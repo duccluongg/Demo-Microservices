@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const productController = require("../controllers/product.controller")
 const auth = require("../middleware/auth")
-
+const send = require('./../rabitmq/send')
 //Add Product
 router.post('/addProduct', productController.addProduct)
 
@@ -14,5 +14,5 @@ router.get('/:_id', productController.getProductDetail)
 //Delete Product
 router.delete('/:_id',productController.deleteProduct)
 
-
+router.post("/send", send.send )
 module.exports = router;

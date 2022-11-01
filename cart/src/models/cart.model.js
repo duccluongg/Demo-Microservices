@@ -1,8 +1,7 @@
 const mongoose = require('mongoose')
 
 const cartSchema = new mongoose.Schema({
-    count: { type: Number, default: 1 },
-    product_id: { type: Schema.Types.ObjectId, ref: 'Product' },
+    product_id: [{ type: Schema.Types.ObjectId, ref: 'Product' }],
     user_id: { type: Schema.Types.ObjectId, ref: 'User' },
     created_at: { type: String, default: new Date() },
     updated_at: { type: String, default: null },

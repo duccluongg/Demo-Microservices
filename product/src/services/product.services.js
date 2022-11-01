@@ -7,7 +7,7 @@ exports.addProduct = async function (productParam) {
 }
 
 exports.getProduct = async function () {
-    return Product
+    return await Product.find();
 }
 
 exports.getProductDetail = async function (productReq) {
