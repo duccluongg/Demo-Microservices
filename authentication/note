@@ -1,7 +1,0 @@
-vieest 
-model - > services - > middleware -> controller -> router-> index
-
-luồng chạy 
-index -> router -> controller -> middleware -> services
-
-https://www.youtube.com/watch?v=JBJDP9CdyH4
