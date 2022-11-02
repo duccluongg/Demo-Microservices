@@ -11,10 +11,10 @@ app.use(express.json())
 
 app.use(cors());
 
-// const productRoute = require('./src/routes/product.route');
+const orderRoute = require('./src/routes/order.route');
 
-// app.use('/product',productRoute)
+app.use('/order',orderRoute)
 
-app.listen(8002, () => {
-    console.log('Customer is Listening to Port 8002')
+app.listen(8003, () => {
+    console.log('Customer is Listening to Port 8003')
 })

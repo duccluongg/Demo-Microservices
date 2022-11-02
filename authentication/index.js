@@ -1,6 +1,7 @@
 const express = require('express')
 const dbconnection = require("./src/config/dbconnection");
 const cors = require('cors');
+require('./src/rabitmq/comsumer.js');
 
 dbconnection();
 
