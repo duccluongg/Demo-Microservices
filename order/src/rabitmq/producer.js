@@ -9,7 +9,7 @@ class Producer {
   channel;
 
   async createChannel() {
-    const connection = await amqp.connect("amqp://localhost");
+    const connection = await amqp.connect("amqp://172.17.0.2");
     this.channel = await connection.createChannel();
   }
 
