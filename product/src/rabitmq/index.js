@@ -32,6 +32,7 @@ class MessageBroker {
    * @param {Object} msg Message as Buffer
    */
   async send(queue, msg) {
+    
     if (!this.connection) {
       await this.init();
     }
